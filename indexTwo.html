@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!--Curran Rose-->
+<!--The head is just contains gerneral specify information-->
+<head>
+    <script src="code.js"></script>
+    <script>
+        alert("This is a test of the alert function!");
+    </script>
+    <!--The title defines the title in the browser's title bar-->
+    <title>
+        Prof. Prater's CSC102 Webpage
+    </title>
+    <!--This changes the background color-->
+    <style>
+        body{
+            background-color: blue;
+        }
+    </style>
+</head>
+<!--the body contains the main content of the html document like text, images and other content.-->
+<body>
+    <!--the img code just say that it is a image and then it prints the image right in to the background-->
+    <img src="UATspaceLogo-1.jpg">
+    <!--The h1 is just putting titles in the back ground-->
+    <h1>
+        UAT Space Program
+    </h1>
+    <script>
+        document.write("This is a test of the document.write function");
+    </script>
+    <!--the <p> element is a code paragraph-->
+    <p>
+        This is a test of the paragraph tags.
+    </p> <br>
+    <!--the program with onclick is saying where the programm will hold the count down-->
+    <button onclick="startTimer();">
+        Start
+    </button>
+    <!--the button it just a element of a button that you would press-->
+    <button>
+        Stop
+    </button>
+    <!--the <br> code is a self closing-->
+    <br>
+    <br>
+    <p id="countdownTimer">Starting countdownTimer...</p>
+    <!-- the script function is mostly telling the computer what they have to do-->
+    <!-- the (var currTime) code means that it will start at that number-->
+    <!-- (currTime = currTime - 2) does is subtract from the number two times-->
+    <script>
+        var currTime = 20;
+        function startTimer(){setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 2000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 4000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 6000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 8000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 10000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 12000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 14000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 16000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 18000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = "Blastoff";
+        }, 20000);
+    }
+    </script>
+    <button onclick="playCraps();"> play Crap</button>
+</body>
+
+</html>
